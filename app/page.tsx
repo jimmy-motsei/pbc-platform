@@ -1,65 +1,44 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      {/* Background grid */}
+      <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(204,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(204,0,0,0.03) 1px, transparent 1px)", backgroundSize: "80px 80px", pointerEvents: "none" }} />
+      {/* Top red bar */}
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, var(--pbc-red), transparent)" }} />
+
+      <div style={{ position: "relative" }}>
+        {/* Logo mark */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 48 }}>
+          <div style={{ width: 8, height: 8, background: "var(--pbc-red)", borderRadius: "50%" }} />
+          <span className="font-mono" style={{ fontSize: 12, letterSpacing: "0.25em", color: "var(--pbc-white)" }}>PBC PLATFORM</span>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <h1 className="font-display" style={{ fontSize: "clamp(64px, 12vw, 120px)", lineHeight: 0.88, marginBottom: 24 }}>
+          PROUD<br />
+          <span style={{ color: "var(--pbc-red)", WebkitTextStroke: "2px var(--pbc-red)", WebkitTextFillColor: "transparent" }}>BEGINNERS</span><br />
+          CYCLING CLUB
+        </h1>
+
+        <div className="red-bar" style={{ margin: "32px auto 24px" }} />
+
+        <p style={{ fontSize: 17, fontWeight: 300, color: "var(--pbc-muted)", maxWidth: 420, lineHeight: 1.7, marginBottom: 40, margin: "0 auto 40px" }}>
+          Ride management, member community, and business connections —
+          all in one place. Carrying the{" "}
+          <strong style={{ color: "var(--pbc-white)", fontWeight: 500 }}>#Ahaa</strong>{" "}
+          spirit forward.
+        </p>
+
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center" }}>
+          <Link href="/sign-in" className="btn-primary">SIGN IN →</Link>
+          <Link href="/sign-up" className="btn-ghost">JOIN THE CLUB</Link>
         </div>
-      </main>
-    </div>
+      </div>
+
+      <p className="font-mono" style={{ position: "absolute", bottom: 28, fontSize: 10, color: "#2a2a2a", letterSpacing: "0.1em" }}>
+        © 2025 MARU ONLINE (PTY) LTD · BUILT FOR PBC
+      </p>
+    </main>
   );
 }
