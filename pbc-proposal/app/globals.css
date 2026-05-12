@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --pbc-red: #CC0000;
+  --pbc-black: #080808;
+  --pbc-white: #F2F2ED;
+  --pbc-grey: #141414;
+  --pbc-mid: #242424;
+  --pbc-muted: #666666;
+  --pbc-accent: #FF2020;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--pbc-black);
+  color: var(--pbc-white);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+.font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; }
+.font-mono { font-family: 'IBM Plex Mono', monospace; }
+
+.section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--pbc-red);
+}
+
+.red-bar { width: 48px; height: 3px; background: var(--pbc-red); }
+
+.card-dark {
+  background: var(--pbc-grey);
+  border: 1px solid var(--pbc-mid);
+  border-radius: 2px;
+}
+
+.glow-red { box-shadow: 0 0 40px rgba(204,0,0,0.15); }

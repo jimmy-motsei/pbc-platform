@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build:proposal": "node scripts/build-pbc-proposal.mjs",
     "build": "next build",
     "start": "next start"
   },

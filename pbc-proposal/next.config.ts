@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactCompiler: true,
+  output: "export",
+  assetPrefix: "/pbc-proposal-static",
   turbopack: {
     root: process.cwd(),
   },
