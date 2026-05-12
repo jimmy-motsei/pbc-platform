@@ -9,7 +9,7 @@ const stats = [
 
 const recentRides = [
   { id: "1", date: "SAT 7 JUN",  title: "Blue Valley Morning Blast", rsvp: 14, cap: 20, status: "upcoming" },
-  { id: "2", date: "SAT 14 JUN", title: "Midrand Loop",              rsvp: 8,  cap: 15, status: "upcoming" },
+  { id: "2", date: "SAT 14 JUN", title: "Pretoria Loop",              rsvp: 8,  cap: 15, status: "upcoming" },
   { id: "3", date: "SAT 21 JUN", title: "Hartebeespoort Dam",        rsvp: 22, cap: 25, status: "upcoming" },
 ];
 

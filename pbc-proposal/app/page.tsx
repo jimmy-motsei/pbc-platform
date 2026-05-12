@@ -182,7 +182,7 @@ function Solution() {
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {[
                     { date: "SAT 7 JUN", name: "Blue Valley Morning Blast", distance: "65km", pace: "A-Group", rsvp: 14, cap: 20 },
-                    { date: "SAT 14 JUN", name: "Midrand Loop", distance: "45km", pace: "B-Group", rsvp: 8, cap: 15 },
+                    { date: "SAT 14 JUN", name: "Pretoria Loop", distance: "45km", pace: "B-Group", rsvp: 8, cap: 15 },
                     { date: "SAT 21 JUN", name: "Hartebeespoort Dam Challenge", distance: "95km", pace: "A-Group", rsvp: 22, cap: 25 },
                   ].map((ride) => (
                     <div key={ride.name} style={{ background: "var(--pbc-grey)", border: "1px solid var(--pbc-mid)", padding: "14px 18px", display: "flex", justifyContent: "space-between", alignItems: "center", borderRadius: 2 }}>
@@ -380,7 +380,7 @@ function CTA() {
               </a>
             </div>
             <div style={{ marginTop: 64, display: "flex", gap: 40, justifyContent: "center", flexWrap: "wrap" }}>
-              {[["Maru Online", "The AI integration consultancy behind this platform"], ["Midrand-based", "We understand your market, your roads, your context"], ["hello@maruonline.com", "Reach us directly"]].map(([title, sub]) => (
+              {[["Maru Online", "The AI integration consultancy behind this platform"], ["Pretoria-based", "We understand your market, your roads, your context"], ["hello@maruonline.com", "Reach us directly"]].map(([title, sub]) => (
                 <div key={title as string} style={{ textAlign: "center" }}>
                   <div style={{ fontSize: 13, fontWeight: 500, color: "var(--pbc-white)" }}>{title}</div>
                   <div style={{ fontSize: 12, color: "var(--pbc-muted)", marginTop: 4 }}>{sub}</div>

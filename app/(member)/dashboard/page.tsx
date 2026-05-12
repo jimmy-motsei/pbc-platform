@@ -3,7 +3,7 @@ import { currentUser } from "@clerk/nextjs/server";
 // Mock data — replaced with DB queries in Phase 1
 const upcomingRides = [
   { id: "1", date: "SAT 7 JUN", title: "Blue Valley Morning Blast", distance: "65km", pace: "A-Group", rsvp: 14, cap: 20 },
-  { id: "2", date: "SAT 14 JUN", title: "Midrand Loop", distance: "45km", pace: "B-Group", rsvp: 8, cap: 15 },
+  { id: "2", date: "SAT 14 JUN", title: "Pretoria Loop", distance: "45km", pace: "B-Group", rsvp: 8, cap: 15 },
   { id: "3", date: "SAT 21 JUN", title: "Hartebeespoort Dam Challenge", distance: "95km", pace: "A-Group", rsvp: 22, cap: 25 },
 ];
 

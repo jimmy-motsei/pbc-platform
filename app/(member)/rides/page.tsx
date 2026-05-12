@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const rides = [
   { id: "1", date: "SAT 7 JUN",  title: "Blue Valley Morning Blast",      distance: "65km",  pace: "A-Group", rsvp: 14, cap: 20, time: "06:00", meeting: "Blue Valley Spar" },
-  { id: "2", date: "SAT 14 JUN", title: "Midrand Loop",                   distance: "45km",  pace: "B-Group", rsvp: 8,  cap: 15, time: "06:00", meeting: "Midrand Taxi Rank" },
+  { id: "2", date: "SAT 14 JUN", title: "Pretoria Loop",                   distance: "45km",  pace: "B-Group", rsvp: 8,  cap: 15, time: "06:00", meeting: "Pretoria Taxi Rank" },
   { id: "3", date: "SAT 21 JUN", title: "Hartebeespoort Dam Challenge",   distance: "95km",  pace: "A-Group", rsvp: 22, cap: 25, time: "05:30", meeting: "Hennops Crossing" },
   { id: "4", date: "SAT 28 JUN", title: "Social Ride — All Welcome",      distance: "30km",  pace: "C-Group", rsvp: 6,  cap: 20, time: "07:00", meeting: "Blue Valley Spar" },
 ];
